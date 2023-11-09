@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+## Intro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+button, input, moda, dropdown의 디자인을 구현했습니다.
 
-## Available Scripts
+## Buttons
 
-In the project directory, you can run:
+### color button : props color에 다음 색상을 지정할 수 있습니다.
 
-### `yarn start`
+- light
+- dark
+- primary
+- success
+- danger
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### outline button : props ouline에 다음 색상을 지정할 수 있습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- default
+- secondary
+- primary
+- success
+- danger
 
-### `yarn test`
+### sizes : props size에 다음을 지정할 수 있습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- small
+- medium
+- large
 
-### `yarn build`
+### Icon in button : 자식 요소로 넣어줄 수 있습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Modal
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 두가지 모달을 구현하였습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 외부 영역을 클릭하면 닫히는 모달
+- 버튼으로만 닫히는 모달
 
-### `yarn eject`
+## Input
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 아래 기능이 있습니다.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 숫자만 입력 가능
+- 천 단위 콤마 삽입
+- 유효성 검사 (input이 비었을때 alret, 값이 들어갔을 경우 alert)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## DropDown
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+부모요소를 덮는 dropdown을 구현했습니다.
+CSSTransition을 사용하여 애니메이션 효과를 지정했습니다.
